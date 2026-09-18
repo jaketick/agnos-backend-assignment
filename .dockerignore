@@ -1,0 +1,15 @@
+.git
+.gitignore
+
+.env
+
+coverage.out
+
+tmp
+bin
+
+*.log
+
+.DS_Store
+
+README.tmp
