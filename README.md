@@ -31,6 +31,20 @@ Nginx                       Reverse proxy in front of the Go API
 Docker Compose              Runs Nginx, Go API, and PostgreSQL together          
 Go `testing` / `httptest`   Unit testing and HTTP client testing 
 
+## Architecture Diagram
+
+The diagram below provides an overview of the middleware, its internal layers,
+and its integration with PostgreSQL and the external Hospital Information System
+(HIS).
+
+<p align="center">
+  <a href="./diagram.png">
+    <img src="./diagram.png" alt="Hospital middleware architecture diagram" width="720">
+  </a>
+</p>
+
+<p align="center"><sub>Click the diagram to view it at full size.</sub></p>
+
 ## Project Structure
 
 ```text
@@ -608,6 +622,5 @@ The tests cover important parts of the application, including:
 - Authentication middleware
 - Patient service logic
 - Hospital HIS client behavior
-
 
 
